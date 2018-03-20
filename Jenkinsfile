@@ -7,8 +7,17 @@ pipeline {
       }
     }
     stage('say good buy') {
-      steps {
-        echo 'good by'
+      parallel {
+        stage('say good buy') {
+          steps {
+            echo 'good by'
+          }
+        }
+        stage('not valid') {
+          steps {
+            echo 'not valid'
+          }
+        }
       }
     }
     stage('test') {
