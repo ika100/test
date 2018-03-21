@@ -26,5 +26,10 @@ pipeline {
         echo 'hello4'
       }
     }
+    stage('say hello5 dev feature') {
+       steps {
+         echo 'hello_dev_feature'
+       }
+    }
   }
 }
