@@ -11,12 +11,12 @@ pipeline {
         echo 'hello 2'
       }
     }
-    stage('say good hello3') {
+    stage('say hello3') {
       steps {
         echo 'hello3'
       }
     }
-    stage('say good hello4') {
+    stage('say hello4') {
       steps {
         echo 'hello4'
       }
